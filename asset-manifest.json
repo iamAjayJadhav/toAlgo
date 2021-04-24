@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/toalgo/static/css/main.767c1d41.chunk.css",
+    "main.js": "/toalgo/static/js/main.a38a653d.chunk.js",
+    "main.js.map": "/toalgo/static/js/main.a38a653d.chunk.js.map",
+    "runtime-main.js": "/toalgo/static/js/runtime-main.c105d8aa.js",
+    "runtime-main.js.map": "/toalgo/static/js/runtime-main.c105d8aa.js.map",
+    "static/js/2.2ea6202c.chunk.js": "/toalgo/static/js/2.2ea6202c.chunk.js",
+    "static/js/2.2ea6202c.chunk.js.map": "/toalgo/static/js/2.2ea6202c.chunk.js.map",
+    "index.html": "/toalgo/index.html",
+    "static/css/main.767c1d41.chunk.css.map": "/toalgo/static/css/main.767c1d41.chunk.css.map",
+    "static/js/2.2ea6202c.chunk.js.LICENSE.txt": "/toalgo/static/js/2.2ea6202c.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/toalgo/static/media/1.48313b59.jpg",
+    "static/media/HeroSectionVideo.7d1ea6a9.mp4": "/toalgo/static/media/HeroSectionVideo.7d1ea6a9.mp4",
+    "static/media/about.svg": "/toalgo/static/media/about.2832bb8c.svg",
+    "static/media/boyMaze.svg": "/toalgo/static/media/boyMaze.f3525aa7.svg",
+    "static/media/girl.svg": "/toalgo/static/media/girl.8ee95084.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c105d8aa.js",
+    "static/js/2.2ea6202c.chunk.js",
+    "static/css/main.767c1d41.chunk.css",
+    "static/js/main.a38a653d.chunk.js"
+  ]
+}
