@@ -4,13 +4,14 @@ import { dijkstra } from "../algorithms/dijkstra"
 import { AStar } from "../algorithms/aStar"
 import { dfs } from "../algorithms/dfs"
 import { bfs } from "../algorithms/bfs"
-import Sidebar from "../components/Sidebar"
-import Navbar from "../components/Navbar"
 import "./PathfindingVisualizer.css"
-import Header from "../components/Header"
-import { styled } from "@material-ui/core"
-import PathNav from "../PathfindingNavbar/PathNav.style"
-
+import bluePathfinding from "../images/bluePathfinding.svg"
+import pinkPathfinding from "../images/pinkPathfinding.svg"
+import redPathfinding from "../images/redPathfinding.svg"
+import whitePathfinding from "../images/whitePathfinding.svg"
+import brownPathfinding from "../images/brownPathfinding.svg"
+import yellowPathfinding from "../images/yellowPathfinding.svg"
+import greenPathfinding from "../images/greenPathfinding.svg"
 export default class PathfindingVisualizer extends Component {
   constructor() {
     super()
@@ -435,6 +436,16 @@ export default class PathfindingVisualizer extends Component {
           )}
         </div>
 
+        <div>
+          <div className="colordescription"></div>
+          <img height={20} src={bluePathfinding} />
+          <img height={20} src={pinkPathfinding} />
+          <img height={20} src={yellowPathfinding} />
+          <img height={20} src={redPathfinding} />
+          <img height={20} src={greenPathfinding} />
+          <img height={20} src={brownPathfinding} />
+          <img height={20} src={whitePathfinding} />
+        </div>
         <table
           className="grid-container"
           onMouseLeave={() => this.handleMouseLeave()}
