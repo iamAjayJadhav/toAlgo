@@ -1,5 +1,6 @@
 import React from "react"
 import Sorting from "./Sorting"
+import SortingApp from "../Sorting/SortingApp"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 // import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Menu from "../components/Menu"
@@ -16,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/Sorting" component={Sorting} exact />
+        <Route path="/Sorting" component={SortingApp} exact />
         <Route
           path="/PathfindingVisualizer"
           component={PathfindingVisualizer}

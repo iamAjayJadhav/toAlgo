@@ -438,13 +438,13 @@ export default class PathfindingVisualizer extends Component {
 
         <div>
           <div className="colordescription"></div>
-          <img height={20} src={greenPathfinding} />
-          <img height={20} src={redPathfinding} />
-          <img height={20} src={brownPathfinding} />
-          <img height={20} src={yellowPathfinding} />
-          <img height={20} src={bluePathfinding} />
-          <img height={20} src={pinkPathfinding} />
-          <img height={20} src={whitePathfinding} />
+          <img height={20} src={greenPathfinding} alt="Starting node" />
+          <img height={20} src={redPathfinding} alt="Ending node" />
+          <img height={20} src={brownPathfinding} alt="Walls node" />
+          <img height={20} src={yellowPathfinding} alt="Shortest Path" />
+          <img height={20} src={bluePathfinding} alt="Visited node" />
+          <img height={20} src={pinkPathfinding} alt="Visiting node" />
+          <img height={20} src={whitePathfinding} alt="Unvisited nodes" />
         </div>
         <table
           className="grid-container"
