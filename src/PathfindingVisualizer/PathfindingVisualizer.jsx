@@ -425,15 +425,6 @@ export default class PathfindingVisualizer extends Component {
           >
             Clear Walls
           </button>
-          {this.state.isDesktopView ? (
-            <button type="button" onClick={() => this.toggleView()}>
-              Mobile View
-            </button>
-          ) : (
-            <button type="button" onClick={() => this.toggleView()}>
-              Desktop View
-            </button>
-          )}
         </div>
 
         <div>

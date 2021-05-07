@@ -3,8 +3,8 @@ import {
   FormControl,
   FormControlLabel,
   FormLabel,
-  Select,
-  MenuItem,
+  Radio,
+  RadioGroup,
 } from "@material-ui/core"
 
 export default function Form({
@@ -18,18 +18,18 @@ export default function Form({
     <div className="card container-small">
       <FormControl>
         <FormLabel>{formLabel}</FormLabel>
-        <Select value={currentValue} onChange={onChange}>
+        <RadioGroup row value={currentValue} onChange={onChange}>
           {values.map((value, index) => {
             return (
               <FormControlLabel
                 key={`${value}_${index}`}
                 value={values[index]}
-                control={<MenuItem />}
+                control={<Radio />}
                 label={labels[index]}
               />
             )
           })}
-        </Select>
+        </RadioGroup>
       </FormControl>
     </div>
   )

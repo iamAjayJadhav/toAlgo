@@ -13,6 +13,8 @@ body {
 
 .container-small {
   display: flex;
+  flex-direction: "row";
+  flex-wrap: nowrap;
   align-items: flex-end;
   justify-content: center;
   margin: 5px;
@@ -20,7 +22,7 @@ body {
 }
 
 .bars {
-  height: 400px;
+  height: 350px;
   color: black;
 }
 
@@ -32,4 +34,11 @@ body {
 
 .controls {
   display: flex;
+}
+
+.inputform {
+  display: inline;
+  margin-left: 50px;
+  align-items: center;
+  margin-bottom: 10px;
 }

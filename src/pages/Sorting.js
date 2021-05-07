@@ -4,7 +4,6 @@ import Header from "../components/Header"
 import "./App.style.css"
 import Main from "./Main"
 
-import { bubbleSort } from "../Helpers/sorts"
 import { Sleep } from "../Helpers/sleepFunction"
 function Sorting() {
   const [size, setSize] = useState(10)

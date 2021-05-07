@@ -1,6 +1,7 @@
 import React from "react"
 import { IconButton } from "@material-ui/core"
 import { Buttons } from "../components/Header.style"
+// importing the buttons
 import {
   PlayArrow,
   Pause,
@@ -18,7 +19,8 @@ import "./SortingApp.css"
 import bubbleSort from "../algorithms/bubbleSort"
 import mergeSort from "../algorithms/mergeSort"
 import quickSort from "../algorithms/quickSort"
-
+import insertionsort from "../algorithms/insertionsort"
+import selectionsort from "../algorithms/selectionsort"
 class SortingApp extends React.Component {
   state = {
     array: [],
@@ -28,7 +30,7 @@ class SortingApp extends React.Component {
     currentStep: 0,
     timeouts: [],
     algorithm: "Bubble Sort",
-    barCount: 10,
+    barCount: 15,
     delay: 200,
   }
 
@@ -36,6 +38,8 @@ class SortingApp extends React.Component {
     "Bubble Sort": bubbleSort,
     "Merge Sort": mergeSort,
     "Quick Sort": quickSort,
+    "Insertion Sort": insertionsort,
+    "Selection Sort": selectionsort,
   }
 
   componentDidMount() {
@@ -148,6 +152,24 @@ class SortingApp extends React.Component {
     })
   }
 
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     arrayInput: null,
+  //   }
+  // }
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault()
+  //   this.setState({
+  //     [event.target.arrayInput]: event.target.value,
+  //   })
+  // }
+
+  // handleInputChange = (event) => {
+  //   event.preventDefault()
+  // }
+
   generateBars = () => {
     this.clearTimeouts()
     this.clearColorKey()
@@ -156,7 +178,7 @@ class SortingApp extends React.Component {
     let barsTemp = []
 
     for (let i = 0; i < barCount; i++) {
-      barsTemp.push(Math.floor(Math.random() * 400) + 10)
+      barsTemp.push(Math.floor(Math.random() * 350) + 10)
     }
 
     this.setState(
@@ -205,7 +227,23 @@ class SortingApp extends React.Component {
     return (
       <div className="App">
         <section className="bars container card">{barsDiv}</section>
-
+        {/* <section className="inputform">
+          <p>Array is : {arrayInput}</p>
+          <form onSubmit={this.handleSubmit}>
+            <p>
+              <input
+                type="number"
+                value={arrayInput}
+                placeholder="Array"
+                name="arrayInput"
+                onchange={this.handleInputChange}
+              />
+            </p>
+            <p>
+              <button>Add</button>
+            </p>
+          </form>
+        </section> */}
         <section className="container-small">
           <IconButton onClick={() => this.generateBars()}>
             <RotateLeft />
@@ -223,8 +261,20 @@ class SortingApp extends React.Component {
         <section className="controls container-small">
           <Form
             formLabel="Algorithm"
-            values={["Bubble Sort", "Merge Sort", "Quick Sort"]}
-            labels={["Bubble Sort", "Merge Sort", "Quick Sort"]}
+            values={[
+              "Bubble Sort",
+              "Merge Sort",
+              "Quick Sort",
+              "Insertion Sort",
+              "Selection Sort",
+            ]}
+            labels={[
+              "Bubble Sort",
+              "Merge Sort",
+              "Quick Sort",
+              "Insertion Sort",
+              "Selection Sort",
+            ]}
             currentValue={this.state.algorithm}
             onChange={this.changeAlgorithm}
           />
@@ -238,7 +288,7 @@ class SortingApp extends React.Component {
               "25 items",
               "50 items",
               "75 items",
-              "50 items",
+              "100 items",
             ]}
             currentValue={this.state.barCount}
             onChange={(e) => this.changeBarCount(e.target.value)}
@@ -246,7 +296,14 @@ class SortingApp extends React.Component {
 
           <Form
             formLabel="Speed"
-            values={[200, 100, 50]}
+            values={[500, 100, 50]}
+            labels={["1x", "2x", "4x"]}
+            currentValue={this.state.delay}
+            onChange={this.changeDelay}
+          />
+          <Form
+            formLabel="Speed"
+            values={[500, 100, 50]}
             labels={["1x", "2x", "4x"]}
             currentValue={this.state.delay}
             onChange={this.changeDelay}
