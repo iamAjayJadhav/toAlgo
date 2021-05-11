@@ -37,17 +37,16 @@ export const toPathfindObjectData = {
 }
 
 export const About = {
-  id: "About",
-  to: "About",
+  id: "Theory",
+  to: "Theory",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topline: "Why i am developing this..",
-  headline:
-    "To make everyone literate about Pathfinding and Sorting Algorithms.",
+  topline: "Theory + Programs",
+  headline: "Theory + Programs, Know more about the 'ALGORITHMS'.",
   description:
-    "Pathfinding and sorting algorithms visualization website will help people learn new algorithms and also the people who are not able to learn those algorithms by traditional methods. On website we will have various pathfinding and sorting algorithms with short theory with programs.",
-  buttonLabel: "About",
+    "Pathfinding and sorting algorithms with short theory and programs.",
+  buttonLabel: "Get Started",
   imgStart: false,
   img: require("../../images/about.svg").default,
   alt: "girl",

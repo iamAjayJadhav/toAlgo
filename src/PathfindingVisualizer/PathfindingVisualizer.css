@@ -21,7 +21,7 @@ button {
   align-content: center;
   height: 50px;
   width: 100%;
-
+  margin-top: 20px;
   justify-content: space-evenly;
   background-color: #264653;
   padding-left: 15px;

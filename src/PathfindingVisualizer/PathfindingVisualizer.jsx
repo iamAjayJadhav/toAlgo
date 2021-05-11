@@ -5,6 +5,7 @@ import { AStar } from "../algorithms/aStar"
 import { dfs } from "../algorithms/dfs"
 import { bfs } from "../algorithms/bfs"
 import "./PathfindingVisualizer.css"
+import Navbar from "../components/Navbar"
 import bluePathfinding from "../images/bluePathfinding.svg"
 import pinkPathfinding from "../images/pinkPathfinding.svg"
 import redPathfinding from "../images/redPathfinding.svg"
@@ -176,13 +177,13 @@ export default class PathfindingVisualizer extends Component {
   handleMouseEnter(row, col) {
     if (!this.state.isRunning) {
       if (this.state.mouseIsPressed) {
-        const nodeClassName = document.getElementById(`node-${row}-${col}`)
-          .className
+        const nodeClassName = document.getElementById(
+          `node-${row}-${col}`
+        ).className
         if (this.state.isStartNode) {
           if (nodeClassName !== "node node-wall") {
-            const prevStartNode = this.state.grid[this.state.currRow][
-              this.state.currCol
-            ]
+            const prevStartNode =
+              this.state.grid[this.state.currRow][this.state.currCol]
             prevStartNode.isStart = false
             document.getElementById(
               `node-${this.state.currRow}-${this.state.currCol}`
@@ -197,9 +198,8 @@ export default class PathfindingVisualizer extends Component {
           this.setState({ START_NODE_ROW: row, START_NODE_COL: col })
         } else if (this.state.isFinishNode) {
           if (nodeClassName !== "node node-wall") {
-            const prevFinishNode = this.state.grid[this.state.currRow][
-              this.state.currCol
-            ]
+            const prevFinishNode =
+              this.state.grid[this.state.currRow][this.state.currCol]
             prevFinishNode.isFinish = false
             document.getElementById(
               `node-${this.state.currRow}-${this.state.currCol}`
@@ -401,6 +401,7 @@ export default class PathfindingVisualizer extends Component {
     const { grid, mouseIsPressed } = this.state
     return (
       <div>
+        <Navbar />
         <div className="pathnav">
           <button type="button" onClick={() => this.visualize("Dijkstra")}>
             Dijkstra's
@@ -418,11 +419,7 @@ export default class PathfindingVisualizer extends Component {
           <button type="button" onClick={() => this.clearGrid()}>
             Clear Grid
           </button>
-          <button
-            type="button"
-            className="btn btn-warning"
-            onClick={() => this.clearWalls()}
-          >
+          <button type="button" onClick={() => this.clearWalls()}>
             Clear Walls
           </button>
         </div>

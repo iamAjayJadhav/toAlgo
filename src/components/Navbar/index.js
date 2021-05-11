@@ -7,6 +7,7 @@ import {
   NavbarContainer,
   NavItem,
   NavLinks,
+  NavLinkR,
   NavMenu,
   MobileIcon,
 } from "./NavbarElements"
@@ -26,19 +27,19 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to="Pathfinding"
+              <NavLinkR
+                to="PathfindingVisualizer"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exaact="true"
                 offset={-50}
               >
-                to Pathfind
-              </NavLinks>
+                to Pathfinding
+              </NavLinkR>
             </NavItem>
             <NavItem>
-              <NavLinks
+              <NavLinkR
                 to="Sorting"
                 smooth={true}
                 duration={500}
@@ -46,24 +47,24 @@ const Navbar = ({ toggle }) => {
                 exaact="true"
                 offset={-50}
               >
-                to Sort
-              </NavLinks>
+                to Sorting
+              </NavLinkR>
             </NavItem>
-
             <NavItem>
-              <NavLinks
-                to="About"
+              <NavLinkR
+                to="Theory"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exaact="true"
                 offset={-50}
               >
-                About
-              </NavLinks>
+                to Theory + Programs
+              </NavLinkR>
             </NavItem>
+
             <NavItem>
-              <NavLinks
+              <NavLinkR
                 to="Contact"
                 smooth={true}
                 duration={500}
@@ -72,7 +73,7 @@ const Navbar = ({ toggle }) => {
                 offset={-50}
               >
                 Contact
-              </NavLinks>
+              </NavLinkR>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

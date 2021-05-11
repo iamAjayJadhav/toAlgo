@@ -7,6 +7,7 @@ import Menu from "../components/Menu"
 import PathfindingVisualizer from "../PathfindingVisualizer/PathfindingVisualizer"
 import Home from "./index"
 import Navbar from "../components/Navbar"
+import Theory from "../components/TheorySection/Theory"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/Theory" component={Theory} exact />
         <Route path="/Sorting" component={SortingApp} exact />
         <Route
           path="/PathfindingVisualizer"

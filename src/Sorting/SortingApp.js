@@ -1,6 +1,8 @@
 import React from "react"
 import { IconButton } from "@material-ui/core"
 import { Buttons } from "../components/Header.style"
+import { Link } from "react-router-dom"
+import Navbar from "../components/Navbar"
 // importing the buttons
 import {
   PlayArrow,
@@ -14,7 +16,7 @@ import Form from "../components/Form"
 
 // style
 import "./SortingApp.css"
-
+import index from "../components/Navbar/index"
 // algorithms
 import bubbleSort from "../algorithms/bubbleSort"
 import mergeSort from "../algorithms/mergeSort"
@@ -229,6 +231,7 @@ class SortingApp extends React.Component {
 
     return (
       <div className="App">
+        <Navbar />
         <section className="bars container card">{barsDiv}</section>
         {/* <section className="inputform">
           <p>Array is : {arrayInput}</p>
@@ -247,6 +250,7 @@ class SortingApp extends React.Component {
             </p>
           </form>
         </section> */}
+
         <section className="container-small">
           <IconButton onClick={() => this.generateBars()}>
             <RotateLeft />
@@ -306,10 +310,6 @@ class SortingApp extends React.Component {
             currentValue={this.state.delay}
             onChange={this.changeDelay}
           />
-          <Buttons>
-            <button>Theory </button>
-            <button>Tutorial</button>
-          </Buttons>
         </section>
       </div>
     )
