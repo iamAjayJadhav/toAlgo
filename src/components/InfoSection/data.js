@@ -42,12 +42,12 @@ export const About = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topline: "Why i made this..",
+  topline: "Why i am developing this..",
   headline:
     "To make everyone literate about Pathfinding and Sorting Algorithms.",
   description:
     "Pathfinding and sorting algorithms visualization website will help people learn new algorithms and also the people who are not able to learn those algorithms by traditional methods. On website we will have various pathfinding and sorting algorithms with short theory with programs.",
-  buttonLabel: "Get Started",
+  buttonLabel: "About",
   imgStart: false,
   img: require("../../images/about.svg").default,
   alt: "girl",

@@ -13,6 +13,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  ScrollDown,
 } from "./HeroElements"
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
@@ -28,15 +29,7 @@ const HeroSection = () => {
         <HeroH1>Algorithms Made Easy</HeroH1>
         <HeroP>Let's go and learn new algorithms visually</HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="Sorting"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          <ScrollDown>Scroll Down</ScrollDown>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

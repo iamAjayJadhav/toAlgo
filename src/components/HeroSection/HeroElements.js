@@ -60,6 +60,7 @@ export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 55px;
   text-align: center;
+
   /* animation: type 3s steps(17);
   overflow: hidden;
   white-space: nowrap;
@@ -79,7 +80,20 @@ export const HeroH1 = styled.h1`
     font-size: 40px;
   }
 `
+export const ScrollDown = styled.p`
+  margin-top: 24px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
 
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+`
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;

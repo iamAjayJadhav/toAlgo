@@ -5,3 +5,8 @@ ul {
   overflow-x: hidden;
   font-family: "Karla", sans-serif;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}

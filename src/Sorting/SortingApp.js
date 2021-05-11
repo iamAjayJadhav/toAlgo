@@ -21,6 +21,8 @@ import mergeSort from "../algorithms/mergeSort"
 import quickSort from "../algorithms/quickSort"
 import insertionsort from "../algorithms/insertionsort"
 import selectionsort from "../algorithms/selectionsort"
+import countingSort from "../algorithms/countingSort"
+import { Button } from "react-scroll"
 class SortingApp extends React.Component {
   state = {
     array: [],
@@ -40,6 +42,7 @@ class SortingApp extends React.Component {
     "Quick Sort": quickSort,
     "Insertion Sort": insertionsort,
     "Selection Sort": selectionsort,
+    "Counting Sort": countingSort,
   }
 
   componentDidMount() {
@@ -267,6 +270,7 @@ class SortingApp extends React.Component {
               "Quick Sort",
               "Insertion Sort",
               "Selection Sort",
+              "Counting Sort",
             ]}
             labels={[
               "Bubble Sort",
@@ -274,6 +278,7 @@ class SortingApp extends React.Component {
               "Quick Sort",
               "Insertion Sort",
               "Selection Sort",
+              "Counting Sort",
             ]}
             currentValue={this.state.algorithm}
             onChange={this.changeAlgorithm}
@@ -301,13 +306,10 @@ class SortingApp extends React.Component {
             currentValue={this.state.delay}
             onChange={this.changeDelay}
           />
-          <Form
-            formLabel="Speed"
-            values={[500, 100, 50]}
-            labels={["1x", "2x", "4x"]}
-            currentValue={this.state.delay}
-            onChange={this.changeDelay}
-          />
+          <Buttons>
+            <button>Theory </button>
+            <button>Tutorial</button>
+          </Buttons>
         </section>
       </div>
     )
