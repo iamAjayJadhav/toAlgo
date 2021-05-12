@@ -3,6 +3,7 @@ import { IconButton } from "@material-ui/core"
 import { Buttons } from "../components/Header.style"
 import { Link } from "react-router-dom"
 import Navbar from "../components/Navbar"
+
 // importing the buttons
 import {
   PlayArrow,

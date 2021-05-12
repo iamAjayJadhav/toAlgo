@@ -1,6 +1,6 @@
 export const toSortObjectData = {
-  id: "Sorting",
-  to: "Sorting",
+  id: "SortingApp",
+  to: "SortingApp",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,

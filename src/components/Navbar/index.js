@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinkR
-                to="Sorting"
+                to="SortingApp"
                 smooth={true}
                 duration={500}
                 spy={true}
