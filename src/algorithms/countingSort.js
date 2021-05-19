@@ -17,7 +17,7 @@ const countingSort = (array, position, arraySteps, colorSteps, min, max) => {
     count[array[i]]++
     colorKey[i] = 1
     colorKey[i + 1] = 1
-    colorSteps.push(colorKey.slice())
+
     colorKey[i] = 0
     colorKey[i + 1] = 0
   }
@@ -26,8 +26,8 @@ const countingSort = (array, position, arraySteps, colorSteps, min, max) => {
     while (count[i]-- > 0) {
       array[z++] = i
       arraySteps.push(array.slice())
-      colorKey[min] = 3
-      colorKey[z + 1] = 3
+      colorKey[min] = 1
+      colorKey[z + 1] = 1
       colorSteps.push(colorKey.slice())
       colorKey[min] = 0
       colorKey[z + 1] = 0
