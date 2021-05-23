@@ -2,7 +2,7 @@ import React from "react"
 import SortingApp from "../Sorting/SortingApp"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 // import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Menu from "../components/Menu"
+
 import PathfindingVisualizer from "../PathfindingVisualizer/PathfindingVisualizer"
 import Home from "./index"
 import Navbar from "../components/Navbar"

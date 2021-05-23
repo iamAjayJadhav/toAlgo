@@ -1,0 +1,9 @@
+Steps to run the code in your machine
+1) Install VsCode in your machine
+2) Install Node.js in your machine
+3) import or open the Project folder in Vscode
+4) Open Termainal in VsCode
+You’ll need to have Node >= 10.16 and npm >= 5.6 on your machine. 
+To run the project type:, :
+npm start
+5) It will open the browser at local host
