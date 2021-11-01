@@ -1,12 +1,10 @@
-import React from "react"
-import SortingApp from "../Sorting/SortingApp"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import React from "react";
+import SortingApp from "../Sorting/SortingApp";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import { BrowserRouter, Route, Switch } from "react-router-dom"
-
-import PathfindingVisualizer from "../PathfindingVisualizer/PathfindingVisualizer"
-import Home from "./index"
-import Navbar from "../components/Navbar"
-import Theory from "../components/TheorySection/Theory"
+import Home from "./index";
+import Navbar from "../components/Navbar";
+import Theory from "../components/TheorySection/Theory";
 
 function App() {
   return (
@@ -19,18 +17,14 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/Theory" component={Theory} exact />
         <Route path="/SortingApp" component={SortingApp} exact />
-        <Route
-          path="/PathfindingVisualizer"
-          component={PathfindingVisualizer}
-          exact
-        />
+
         <Route
           path="/Contact"
           component={() => {
             window.location.replace(
               "https://www.linkedin.com/in/iamajayjadhav/"
-            )
-            return null
+            );
+            return null;
           }}
         />
       </Switch>
@@ -46,7 +40,7 @@ function App() {
     //      </Switch>
     //    </div>
     //  </BrowserRouter>
-  )
+  );
 }
 
 // const Home = () => {
@@ -56,4 +50,4 @@ function App() {
 //     </div>
 //   )
 // }
-export default App
+export default App;

@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
-import React from "react"
-import { FaBars } from "react-icons/fa"
+import React from "react";
+import { FaBars } from "react-icons/fa";
 import {
   NavLogo,
   Nav,
@@ -10,10 +10,10 @@ import {
   NavLinkR,
   NavMenu,
   MobileIcon,
-} from "./NavbarElements"
+} from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
-  const toggleHome = () => {}
+  const toggleHome = () => {};
 
   return (
     <>
@@ -26,18 +26,6 @@ const Navbar = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinkR
-                to="PathfindingVisualizer"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exaact="true"
-                offset={-50}
-              >
-                to Pathfinding
-              </NavLinkR>
-            </NavItem>
             <NavItem>
               <NavLinkR
                 to="SortingApp"
@@ -79,7 +67,7 @@ const Navbar = ({ toggle }) => {
         </NavbarContainer>
       </Nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
